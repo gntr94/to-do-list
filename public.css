@@ -1,0 +1,133 @@
+/* Style the form for adding new tasks */
+form {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: #00296b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #00296b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+table th {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 425px) {
+    input[type="text"],
+    textarea {
+        width: 80%;
+    }
+    input[type="submit"] {
+        width: 100%!important;
+    }
+}
+
+@media (max-width: 768px) {
+    input[type="submit"] {
+        width: 200px;
+        margin: 0 auto;
+    }
+    table th,
+    table td {
+        width: 100%; 
+        box-sizing: border-box;
+    }
+    table th {
+        background-color: transparent;
+    }
+    table tr {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+input[type="text"],
+textarea {
+  border-radius: 6px;
+  background-color: #fff;
+  font-style: italic;
+  position: relative;
+  z-index: 10;
+  padding: 10px;
+  border: 1px solid #00296b;
+  margin: 5px;
+}
+
+input[type="submit"] {
+    background: #00296b;
+    border-radius: 6px;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 50px;
+    height: 40px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background: #00296b;
+box-shadow: 0px 6px 10px #00000029;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.todo-list-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.plugin-wrap {
+    background: #fff;
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid #d1d1d1;
+    -webkit-box-shadow: inset 0 0 40px 0 #eee;
+    box-shadow: inset 0 0 40px 0 #eee;
+    border-radius: 10px;
+}
